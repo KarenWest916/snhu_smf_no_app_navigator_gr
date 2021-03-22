@@ -93,7 +93,7 @@ FROM UnifyStaging.dbo.Opportunity o
 		   AND o.Academic_Level__c = 'Graduate'
     left JOIN UnifyStaging.dbo.hed__Term__c t
         ON t.Id = o.Term__c
-		
+		--WHERE o.Inquired_Date_Time__c > '2021-01-24'		
 --GROUP BY Opp.Name
 ORDER BY inquired_date_time__c
 
