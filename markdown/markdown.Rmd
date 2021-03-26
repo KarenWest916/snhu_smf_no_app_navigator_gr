@@ -1,36 +1,119 @@
 ---
 title: "Southern New Hampshire University"
-subtitle: "ReMap: Name of your Experiment"
-author: "Your Name |  your.email@snhu.edu"
-date: "Updated: `r Sys.Date()`"
+subtitle: "ReMap: SMF No App Navigator (GR)"
+author: "Karen West |  k.west2@snhu.edu"
+date: "Publication Date: 2021-03-xx <p></p> Updated: `r Sys.Date()`"
 output:
   html_document: 
     css: snhu-remap-test-style.css
     include:
       in_header: insert-logo.html
+    toc: true
+    toc_float: true
 ---
 
-## Overview 
+## Overview `r fontawesome::fa("binoculars")`
+<br>
 
-__Theory:__
+```{r echo=FALSE, out.width = "100%", fig.align='center'}
+knitr::include_graphics(here::here("imgs/_test_summary.png"))
+```
 
-__Null Hypothesis:__
+<br>
 
-__Alternate Hypothesis:__
+__Theory:__ 
+__Hypothesis:__ 
 
-## Test Design
-
-__North Star:__
-
-__Testing Groups:__
-
-## Outcomes & Learnings
-
-__What happened:__
-
-__What did we learn:__
-
-__What next:__
+---
 
 
+## Test Design `r fontawesome::fa("flask")` {.tabset .tabset-pills} 
 
+__Test Metric:__ Application Rate, calculated as:
+$$Application Rate  = \sum_{n=Apps} / \sum_{n=InPopulation}$$
+
+__Testing Groups:__ Of all eligible members of the population (full criteria list below), control and experiment groups were assigned using the random split feature in Marketing Cloud.
+
++ Control Group: **50%** received the Navigator email 
++ Experiment Group: **50%** did not receive the Navigator email
+
+Tasks were created on Tuesday each week and emails were also sent during the experiment timeframe on the same day as task creation. These treatments only occurred the first week that the student was eligible (see below) to receive; they did not occur on a weekly basis. 
+
+**Experiment Population Eligibility (AKA InPopulation):**
+
++ Call dispositioned as "Student Moving Forward No App" or "Successful Transfer"
++ Opportunity is open and in the inquired stage 
++ At least two hours passed since the call
++ Has access to portal
++ Graduate level opportunity
+
+<br>
+<br>
+
+
+
+### Example Email
+
+
+```{r echo=FALSE, out.width = "70%", fig.align='center'}
+knitr::include_graphics(here::here("imgs/.png"))
+```
+
+
+
+---
+
+
+<br>
+<br>
+
+
+## Outcomes & Learnings `r fontawesome::fa("chart-bar")`
+
+__Overall Results:__ As of 3/26/21, the application rate for the test group was ** percentage points higher (+% change)**. This difference is statistically significant with a 95% confidence level and two-sided test of proportions. See [appendix](#stats) for more detail on how to interpret the results.
+
+```{r echo=FALSE, out.width = "100%", fig.align='center'}
+knitr::include_graphics(here::here("imgs/smf_no_app_nav_gr_20210325.png"))
+```
+
+
+<br>
+__Learnings:__
+
++ __learning 1__ 
+
+__Next Steps:__
+
+***??*** 
+
+
+---
+
+## Glossary of Terms `r fontawesome::fa("journal-whills")`
+
+
+(`__SMF:__`) Student Moving Forward
+
+---
+
+
+
+## Appendix `r fontawesome::fa("paperclip")`
+
+<a id="stats"></a>
+
+:::{.note}
+
+
+__Interpreting the Results__ 
+
++ __Confidence Level:__ The percentage of confidence that the result is a consequence of the change made or treatment administered and not a result of random chance.  A 95% confidence interval indicates that we are 95% confident the test result is not due to random chance. 
+
++ __Statistical Significance:__ A test result is said to be "statistically significant" when the difference between the results of the test and control groups is too big to have been a result of chance.
+
++ __One-Sided vs. Two-Sided Test__ A one sided test is used when we only want to prove that the *increase* in conversions (i.e. the metric) that occurred for the test group is significant; it does not consider whether any *decrease* in conversions is significant. A two-sided test evaluates the significance of the test group conversions being higher *or* lower as compared to the control. If we want to be certain that a treatment being tested does not have a negative impact on the metric, then a two-sided test should be conducted.
+
+:::
+
+<br>
+<br>
