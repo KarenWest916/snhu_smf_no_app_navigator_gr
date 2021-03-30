@@ -16,13 +16,14 @@ output:
 <br>
 
 ```{r echo=FALSE, out.width = "100%", fig.align='center'}
-knitr::include_graphics(here::here("imgs/_test_summary.png"))
+knitr::include_graphics(here::here("imgs/smf_no_app_gr_test_summary.png"))
 ```
 
 <br>
 
-__Theory:__ 
-__Hypothesis:__ 
+__Theory:__ Admissions' goal is to have every potential student complete their application on the first phone call with the Admissions Counselor. When a potential student does not fill out an application but still indicates that they are interested, the phone call is dispostioned as "Student Moving Forward No App" or `__SMF__` No App. It's thought that SMF No App student will be more likely to app later if they are provided with more information in email form.
+
+__Hypothesis:__ Sending SMF No App student a follow up email after the initial call with an information handbook about SNHU will increase application rates.
 
 ---
 
@@ -37,32 +38,30 @@ __Testing Groups:__ Of all eligible members of the population (full criteria lis
 + Control Group: **50%** received the Navigator email 
 + Experiment Group: **50%** did not receive the Navigator email
 
-Tasks were created on Tuesday each week and emails were also sent during the experiment timeframe on the same day as task creation. These treatments only occurred the first week that the student was eligible (see below) to receive; they did not occur on a weekly basis. 
+A job was run every hour to identify students in the experiment population (below) to send the Navigator email to. The email includes a link to a PDF handbook called the "Navigator".
 
 **Experiment Population Eligibility (AKA InPopulation):**
 
 + Call dispositioned as "Student Moving Forward No App" or "Successful Transfer"
-+ Opportunity is open and in the inquired stage 
++ Opportunity is open and in the Inquired stage 
 + At least two hours passed since the call
 + Has access to portal
 + Graduate level opportunity
 
 <br>
-<br>
-
 
 
 ### Example Email
 
-
-```{r echo=FALSE, out.width = "70%", fig.align='center'}
-knitr::include_graphics(here::here("imgs/.png"))
+```{r echo=FALSE, out.width = "65%", fig.align='center'}
+knitr::include_graphics(here::here("imgs/navigator_email.png"))
 ```
 
+### Navigator (Click to Open)
 
+<a href="file://millyard.snhu.edu/Data/DataWebServices/SNHU Metrics/Analytics/PDF/SMF_No_App_Navigator_20210226.pdf" target="_blank"> <img alt="nav" src="C:\Users\k.west2\Documents\Project Repository\snhu_smf_no_app_navigator_gr\imgs\nav_cover.png"></a>
 
 ---
-
 
 <br>
 <br>
@@ -70,11 +69,13 @@ knitr::include_graphics(here::here("imgs/.png"))
 
 ## Outcomes & Learnings `r fontawesome::fa("chart-bar")`
 
-__Overall Results:__ As of 3/26/21, the application rate for the test group was ** percentage points higher (+% change)**. This difference is statistically significant with a 95% confidence level and two-sided test of proportions. See [appendix](#stats) for more detail on how to interpret the results.
+__Overall Results:__ As of 3/26/21, the application rate for the test group was **-0.7 percentage points lower (-5.7% change)**. This difference is not statistically significant with a 95% confidence level and two-sided test of proportions. See [appendix](#stats) for more detail on how to interpret the results.
 
 ```{r echo=FALSE, out.width = "100%", fig.align='center'}
-knitr::include_graphics(here::here("imgs/smf_no_app_nav_gr_20210325.png"))
+knitr::include_graphics(here::here("imgs/smf_no_app_nav_gr_20210329.png"))
 ```
+
+<br>
 
 
 <br>
@@ -84,15 +85,14 @@ __Learnings:__
 
 __Next Steps:__
 
-***??*** 
-
+***Closed - No Action*** This experiment did not lead to more applications in the SMF No App population and the result suggest the potential for harming the application rates. A potential reason for these results might be that the student is receiving too much email communication by receiving the Navigator email on top of the emails received as part of the regular email journey and additional email followups made by the Admissions Counselors. 
 
 ---
 
 ## Glossary of Terms `r fontawesome::fa("journal-whills")`
 
 
-(`__SMF:__`) Student Moving Forward
+(__`SMF`__) Student Moving Forward
 
 ---
 

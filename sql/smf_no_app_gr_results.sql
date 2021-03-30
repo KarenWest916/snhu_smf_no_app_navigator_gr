@@ -82,8 +82,8 @@ FROM UnifyStaging.dbo.Opportunity o
               --Which campaign(s) are we searching for?
               --AND 
 			  c. ID IN (
-			  '7013l000001ddpNAAQ',
-'7013l000001ddpSAAQ',
+--			  '7013l000001ddpNAAQ',
+--'7013l000001ddpSAAQ',
 '7013l000001ddQeAAI',
 '7013l000001ddQjAAI'
 )
