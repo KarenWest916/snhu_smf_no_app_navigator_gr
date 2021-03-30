@@ -21,9 +21,9 @@ knitr::include_graphics(here::here("imgs/smf_no_app_gr_test_summary.png"))
 
 <br>
 
-__Theory:__ Admissions' goal is to have every potential student complete their application on the first phone call with the Admissions Counselor. When a potential student does not fill out an application but still indicates that they are interested, the phone call is dispostioned as "Student Moving Forward No App" or `__SMF__` No App. It's thought that SMF No App student will be more likely to app later if they are provided with more information in email form.
+__Theory:__ Admissions' goal is to have every potential student complete their application on the first phone call with the Admissions Counselor. When a potential student does not fill out an application but still indicates that they are interested, the phone call is dispostioned as "Student Moving Forward No App" or (__`SMF`__) No App. It's thought that SMF No App student will be more likely to app later if they are provided with more information in email form.
 
-__Hypothesis:__ Sending SMF No App student a follow up email after the initial call with an information handbook about SNHU will increase application rates.
+__Hypothesis:__ Sending SMF No App students a follow up email after the initial call with an information handbook about SNHU will increase application rates.
 
 ---
 
@@ -81,11 +81,11 @@ knitr::include_graphics(here::here("imgs/smf_no_app_nav_gr_20210329.png"))
 <br>
 __Learnings:__
 
-+ __learning 1__ 
++ __any learnings?__ 
 
 __Next Steps:__
 
-***Closed - No Action*** This experiment did not lead to more applications in the SMF No App population and the result suggest the potential for harming the application rates. A potential reason for these results might be that the student is receiving too much email communication by receiving the Navigator email on top of the emails received as part of the regular email journey and additional email followups made by the Admissions Counselors. 
+***Closed - No Action*** This experiment did not lead to more applications in the SMF No App population and the result suggest the potential for negatively impacting the application rates. A potential reason for these results might be that the student is receiving too many email communications by receiving the Navigator email in addition to the emails received as part of the regular email journey and additional email followups made by the Admissions Counselors. 
 
 ---
 
